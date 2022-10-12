@@ -1,0 +1,65 @@
+.caracteristica__1 {
+  grid-column: center-start / center-end;
+  grid-row: 4 / 5;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+  @include respond(tab-port) {
+    row-gap: 3rem;
+  }
+
+  &__textbox {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    &.active {
+      animation: moveInRight 1s ease-out;
+    }
+
+    @include respond(tab-half) {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+    }
+
+    &--subheader {
+      font-family: $font-primary;
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: $color-primary;
+    }
+
+    &--text {
+      font-family: $font-primary;
+      font-size: 1.8rem;
+      color: $color-primary-dark;
+      font-weight: 400;
+      margin-top: 1.1rem;
+    }
+  }
+
+  &__imagebox {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: grid;
+
+    @include respond(tab-half) {
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+    }
+
+    &--lottie {
+      width: 60%;
+      height: 100%;
+      justify-self: self-end;
+
+      @include respond(tab-port) {
+        justify-self: center;
+        width: 55%;
+      }
+    }
+  }
+}

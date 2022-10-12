@@ -1,0 +1,25 @@
+@import "abstracts/animations";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/form";
+
+@import "layout/navbar";
+@import "layout/header";
+@import "layout/video";
+@import "layout/caracteristica-1";
+@import "layout/caracteristica-2";
+@import "layout/caracteristica-3";
+@import "layout/caracteristica-4";
+@import "layout/acopio";
+@import "layout/acopio-features";
+@import "layout/footer";
+@import "layout/popup";
+
+@import "pages/success";
+@import "pages/privacidad";

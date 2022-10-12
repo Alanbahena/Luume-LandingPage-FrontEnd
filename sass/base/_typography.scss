@@ -1,0 +1,60 @@
+body {
+  font-family: $font-primary;
+  color: $color-primary-dark;
+  font-weight: 500;
+  overflow: visible;
+  overflow-x: hidden;
+}
+
+.heading-1 {
+  font-family: $font-display;
+  color: $color-primary;
+  font-weight: 800;
+  font-size: 5rem;
+  line-height: 1;
+
+  & span {
+    color: $word-green;
+  }
+
+  @include respond(phone) {
+    font-size: 4rem;
+  }
+}
+
+.heading-2 {
+  font-family: $font-display;
+  color: $color-primary;
+  font-weight: 800;
+  font-size: 4.5rem;
+
+  & span {
+    color: $word-green;
+  }
+}
+
+.heading-3 {
+  font-family: $font-display;
+  color: $color-primary;
+  font-weight: 500;
+  font-size: 2.8rem;
+}
+
+.dom_text {
+  color: $color-primary-dark;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.rec_text {
+  color: $color-primary-dark;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.acopio_features-text {
+  color: $color-primary-dark;
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-align: center;
+}

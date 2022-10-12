@@ -1,0 +1,52 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    font-family: $font-display;
+    font-weight: 600;
+    font-size: 2.2rem;
+    cursor: pointer;
+  }
+
+  &--main {
+    background-image: linear-gradient(
+      to right,
+      $main-button-1,
+      $main-button-2,
+      $main-button-3
+    );
+    color: white;
+    padding: 1.7rem 2rem;
+
+    &:hover {
+      transform: translateY(-0.2rem);
+      transition: transform 0.2s;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+    }
+  }
+
+  &--form {
+    background-image: linear-gradient(
+      to right,
+      $main-button-1,
+      $main-button-2,
+      $main-button-3
+    );
+    color: white;
+    padding: 1.5rem 2rem;
+
+    &:hover {
+      transform: translateY(-0.2rem);
+      transition: transform 0.2s;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+    }
+
+    @include respond(phone) {
+      font-size: 2rem;
+    }
+  }
+}

@@ -1,0 +1,158 @@
+.footer {
+  grid-column: full-start / full-end;
+  grid-row: 9 / 10;
+  background-image: linear-gradient(
+    to right,
+    $main-button-1,
+    $main-button-2,
+    $main-button-3
+  );
+
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
+      6,
+      [col-start] minmax(min-content, 20rem) [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-rows: repeat(2, min-content);
+
+  &_content {
+    grid-column: center-start / center-end;
+    grid-row: 1 / 2;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    display: grid;
+    justify-content: space-between;
+
+    @include respond(mini-tab) {
+      justify-content: center;
+    }
+
+    &-text {
+      grid-row: 1 / 2;
+      display: grid;
+      grid-template-columns: repeat(2, max-content);
+      column-gap: 5rem;
+
+      @include respond(mini-tab) {
+        grid-row: 1 / 2;
+      }
+    }
+
+    &-informacion {
+      grid-column: 1 / 2;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      @include respond(mini-tab) {
+        align-items: flex-start;
+      }
+    }
+
+    &-siguenos {
+      grid-column: 2 / 3;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  .copyright {
+    grid-row: 2 / 3;
+    grid-column: center-start / center-end;
+    justify-self: center;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+
+    &-item {
+      display: flex;
+      list-style: none;
+      margin-top: 1rem;
+      margin-left: auto;
+
+      @include respond(mini-tab) {
+        margin-left: 0;
+      }
+    }
+
+    &-link {
+      &:link,
+      &:visited {
+        color: white;
+        text-decoration: none;
+        font-family: $font-primary;
+        font-size: 2rem;
+        font-weight: 400;
+        text-align: end;
+
+        &:hover {
+          color: $main-button-1;
+        }
+      }
+    }
+  }
+
+  .footer_text-head {
+    font-family: $font-primary;
+    font-size: 2rem;
+    font-weight: 500;
+    color: $footer-dark;
+  }
+
+  .instagram {
+    font-size: 3rem;
+    color: white;
+    margin-top: 1rem;
+
+    &:hover {
+      color: $main-button-1;
+    }
+  }
+
+  .facebook {
+    font-size: 3rem;
+    color: white;
+    margin-top: 0.6rem;
+
+    &:hover {
+      color: $main-button-1;
+    }
+  }
+
+  .youtube {
+    font-size: 3rem;
+    color: white;
+    margin-top: 0.6rem;
+
+    &:hover {
+      color: $main-button-1;
+    }
+  }
+
+  .footer_logo {
+    width: 192px;
+    height: 87px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    @include respond(mini-tab) {
+      grid-row: 2 / 3;
+      display: none;
+    }
+  }
+
+  .copyright {
+    font-family: $font-display;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}

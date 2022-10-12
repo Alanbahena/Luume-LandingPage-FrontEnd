@@ -1,0 +1,147 @@
+.header {
+  // background-color: yellow;
+  grid-column: center-start / center-end;
+  grid-row: 2 / 3;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &__box {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: repeat(3, min-content);
+    align-content: center;
+    grid-row-gap: 1.5rem;
+
+    animation: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+    @include respond(tab-half) {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+    }
+
+    .rectangule__header {
+      grid-column: 1 / 2;
+      margin-right: 0.9rem;
+
+      @include respond(phone) {
+        height: 4rem;
+      }
+    }
+
+    &-head {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+
+    &-text {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      margin-top: 0.5rem;
+      margin-right: 6rem;
+
+      font-weight: 400;
+      font-size: 1.9rem;
+
+      @include respond(tab-half) {
+        margin-right: 0;
+      }
+    }
+
+    &-launch {
+      grid-column: 2 / 3;
+      font-size: 1.8rem;
+      font-weight: 400;
+      opacity: 0.8;
+    }
+
+    &-form {
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+
+      .form {
+        display: grid;
+        grid-template-columns: 1fr max-content;
+        align-items: center;
+        grid-column-gap: 2rem;
+
+        @include respond(phone) {
+          grid-row-gap: 1.5rem;
+        }
+
+        &__group {
+          grid-column: 1 / 2;
+
+          @include respond(phone) {
+            grid-column: 1 / 3;
+            grid-row: 1 / 2;
+          }
+        }
+
+        & .btn--form {
+          grid-column: 2 / 3;
+          align-self: center;
+
+          @include respond(phone) {
+            grid-column: 1 / 3;
+            grid-row: 2 / 3;
+          }
+        }
+
+        .form__input {
+          font-size: 1.8rem;
+          color: $color-primary;
+          padding: 1.5rem 2rem;
+          border-radius: 5px;
+          background-color: rgba($header-form, $alpha: 0.1);
+          border: 2px solid rgba($header-form-border, $alpha: 1);
+          display: block;
+          transition: all 0.3s;
+          width: 100%;
+
+          &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+            border: 2px solid rgba($main-button-3, $alpha: 1);
+          }
+
+          &:focus:invalid {
+            border: 2px solid rgba($header-form-wrong, $alpha: 1);
+          }
+        }
+      }
+    }
+  }
+
+  &__image {
+    display: grid;
+    align-items: center;
+    margin-left: 4rem;
+
+    animation: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+    @include respond(tab-half) {
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+      justify-items: center;
+      margin-left: 0;
+    }
+
+    .header__mockup {
+      width: 100%;
+      height: auto;
+
+      @include respond(tab-half) {
+        width: 80%;
+        justify-content: center;
+      }
+    }
+  }
+}

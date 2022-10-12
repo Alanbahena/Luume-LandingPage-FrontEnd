@@ -1,0 +1,63 @@
+.acopio_features {
+  grid-column: center-start / center-end;
+  grid-row: 7 / 8;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 5rem;
+  row-gap: 3.5rem;
+
+  &-domicilio {
+    border-radius: 10px;
+    background-color: rgba($acopio-1, $alpha: 0.13);
+    padding: 4.5rem;
+
+    display: grid;
+    grid-row-gap: 2rem;
+
+    @include respond(phone) {
+      padding: 2rem;
+    }
+
+    .acopio_animation-1 {
+      width: 100%;
+      height: 180px;
+    }
+  }
+
+  &-dinero {
+    border-radius: 10px;
+    background-color: rgba($acopio-2, $alpha: 0.13);
+    padding: 4.5rem;
+
+    @include respond(phone) {
+      padding: 2rem;
+    }
+
+    .acopio_animation-2 {
+      width: 100%;
+      height: 280px;
+    }
+  }
+
+  &-pago {
+    border-radius: 10px;
+    background-color: rgba($acopio-1, $alpha: 0.13);
+    padding: 4.5rem;
+
+    @include respond(phone) {
+      padding: 2rem;
+    }
+
+    .acopio_animation-3 {
+      width: 100%;
+      height: 250px;
+    }
+  }
+
+  .acopio-text {
+    text-align: center;
+  }
+}

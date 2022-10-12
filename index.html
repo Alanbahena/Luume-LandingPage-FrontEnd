@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Meta Description -->
+    <meta
+      name="description"
+      content="Un nuevo camino para revolucionar el sistema de reciclje"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Raleway:wght@300;400;500;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Stylessheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Apple Touch Icon (at least 200x200px) -->
+    <link rel="apple-touch-icon" href="/custom-icon.png" />
+
+    <!-- To run web application in full-screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- Status Bar Style (see Supported Meta Tags below for available values) -->
+    <!-- Has no effect unless you have the previous meta tag -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <!-- Microsoft Tiles -->
+    <meta name="msapplication-config" content="browserconfig.xml" />
+
+    <!-- Helps prevent duplicate content issues -->
+    <link
+      rel="canonical"
+      href="http://example.com/2017/09/a-new-article-to-read.html"
+    />
+
+    <!-- Open Graph -->
+
+    <meta property="og:title" content="Lu'um-e | " />
+    <meta
+      property="og:description"
+      content="Un innovador sistema de gestión de residuos solidos reciclados"
+    />
+    <meta property="og:image" content="img/header_mockup-1x" />
+
+    <!-- Fav Icon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-237210150-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-237210150-1");
+    </script> -->
+
+    <!-- Tittle -->
+    <title>Lu'um-e | Un innovador sistema de reciclaje</title>
+  </head>
+
+  <body class="container">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="/">
+        <img
+          srcset="
+            img/luume-nav_logo-1x.jpg 166w,
+            img/luume-nav_logo-2x.jpg 322w
+          "
+          sizes="(max-width: 900px) 19vw, (max-width: 600px) 100vw, 322px"
+          alt="Lu'um-e Logo"
+          class="navbar-logo"
+          loading="lazy"
+          src="img/luume-nav_logo-2x.jpg"
+        />
+      </a>
+
+      <input type="checkbox" class="navbar__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navbar__button">
+        <span class="navbar__button-icon">&nbsp;</span>
+      </label>
+      <div class="navbar__background">&nbsp;</div>
+
+      <div class="navbar__container">
+        <ul class="navbar__container-links">
+          <li class="navbar__item">
+            <a href="/" class="navbar__container-link">Inicio</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#caracteristicas" class="navbar__container-link"
+              >Características</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="#servicios" class="navbar__container-link">Servicios</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#acerca" class="navbar__container-link">Acerca</a>
+          </li>
+        </ul>
+      </div>
+      <a href="#popup" class="btn btn--main">Ser miembro</a>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="header" id="inicio">
+      <div class="header__box">
+        <img
+          src="img/Rectangule_header.png"
+          alt="Rectangule"
+          class="rectangule__header"
+        />
+        <h1 class="header__box-head heading-1">
+          Un nuevo camino para revolucionar el sistema de <span>reciclaje</span>
+        </h1>
+
+        <p class="header__box-text">
+          Lu’um-e es una app que facilita el proceso de reciclaje en el hogar
+          conectando a usuarios con centros de acopio; quienes recolectan y
+          ofrecen servicios a domicilio de manera práctica y conveniente. <br />
+          Se parte de nuestro lanzamiento:
+        </p>
+        <div class="header__box-form">
+          <form class="form" method="post" action="/subscription">
+            <div class="form__group">
+              <input
+                type="email"
+                class="form__input"
+                placeholder="Escribe tu correo aqui"
+                name="email"
+                id="email"
+                required
+                autocomplete="off"
+              />
+            </div>
+            <button class="btn btn--form" type="submit" value="Send Message">
+              Ser miembro
+            </button>
+          </form>
+        </div>
+        <p class="header__box-launch">
+          Inicialmente iOS 2023. Android poco después.
+        </p>
+      </div>
+      <div class="header__image">
+        <img
+          srcset="img/header_mockup-1x.png 695w, img/header_mockup-2x.png 1390w"
+          sizes="(max-width: 1400px) 60vw, (max-width: 750px) 20vw, 1390px"
+          alt="lu'um-e App"
+          class="header__mockup"
+          loading="lazy"
+          src="img/header_mockup-2x.png"
+        />
+      </div>
+    </header>
+
+    <section class="video" id="counter">
+      <div class="background-image" loading="lazy" id="caracteristicas">
+        <div class="video__content">
+          <div class="video__content__text video__content__text-1">
+            <img src="img/Rec_green-video.png" alt="Yellow" />
+            <span
+              class="video-header counter-value counter-value-1"
+              data-count="42000000"
+            ></span>
+
+            <p class="video-text">
+              Cantidad de <span>residuos</span> generados en un año en México
+            </p>
+          </div>
+          <div class="video__content__text video__content__text-2">
+            <img src="img/Rec_green-video.png" alt="Yellow" />
+            <span
+              class="video-header counter-value counter-value-2"
+              data-count="1.1"
+            ></span>
+            <p class="video-text">
+              Residuos promedio generados por <span>persona</span> en un día
+            </p>
+          </div>
+          <div class="video__content__text video__content__text-3">
+            <img src="img/Rec_green-video.png" alt="Yellow" />
+            <span
+              class="video-header counter-value counter-value-3"
+              data-count="12"
+            ></span>
+            <p class="video-text">
+              Se estima que solo el 12% se <span>recicla</span> en México
+            </p>
+          </div>
+        </div>
+        <iframe
+          class="video-luume"
+          src="https://www.youtube.com/embed/9VBq5LFVA04"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="caracteristica__2">
+      <div class="caracteristica__2--bck">
+        <div class="caracteristica__2__textbox scroll-reveal">
+          <p class="caracteristica__2__textbox--subheader">
+            Característica del servicio
+          </p>
+          <h3 class="heading-2">
+            Solicita un servicio de <span>recolección</span>.
+          </h3>
+          <p class="caracteristica__2__textbox--text">
+            Elige un centro de acopio, fecha, lugar y hora. Personaliza el
+            servicio de recolección que desees.
+          </p>
+        </div>
+        <div class="caracteristica__2__imagebox">
+          <lottie-player
+            src="img/json/car.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+            class="caracteristica__2__imagebox--lottie2"
+          ></lottie-player>
+        </div>
+      </div>
+    </section>
+
+    <section class="caracteristica__1" id="servicios">
+      <div class="caracteristica__1__textbox">
+        <p class="caracteristica__1__textbox--subheader">
+          Característica del servicio
+        </p>
+        <h3 class="heading-2"><span>Aprende</span> y recicla correctamente</h3>
+        <p class="caracteristica__1__textbox--text">
+          Te acompañamos en el proceso de reciclaje. Dentro de nuestra
+          biblioteca digital encontrarás el soporte y herramientas que necesitas
+          para separar todos tus residuos.
+        </p>
+      </div>
+      <div class="caracteristica__1__imagebox">
+        <lottie-player
+          src="img/json/cara1.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+          class="caracteristica__1__imagebox--lottie"
+        ></lottie-player>
+      </div>
+    </section>
+
+    <section class="caracteristica__3">
+      <div class="caracteristica__3__textbox">
+        <p class="caracteristica__3__textbox--subheader">
+          Característica del servicio
+        </p>
+        <h3 class="heading-2">
+          Prueba tu <span>impacto</span> ambiental y genera un
+          <span>monedero</span> digital
+        </h3>
+        <p class="caracteristica__3__textbox--text">
+          Visualiza y comparte tu impacto ambiental. Recibe un monedero digital
+          que podrás utilizar para comprar productos ecológicos en negocios
+          sustentables en tu comunidad.
+        </p>
+      </div>
+      <div class="caracteristica__3__imagebox">
+        <lottie-player
+          src="img/json/data3.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+          class="caracteristica__3__imagebox--lottie3"
+        ></lottie-player>
+      </div>
+    </section>
+
+    <section class="caracteristica__4">
+      <div class="caracteristica__4--bck">
+        <div class="caracteristica__4__textbox">
+          <p class="caracteristica__4__textbox--subheader">
+            Característica del servicio
+          </p>
+          <h3 class="heading-2">
+            Crea tu <span>propio</span> centro de acopio y genera
+            <span>ingresos</span> extras
+          </h3>
+          <p class="caracteristica__4__textbox--text">
+            Genera desde $5 mil MXN semanales ofreciendo servicios de
+            recolección personalizados.
+          </p>
+        </div>
+        <div class="caracteristica__4__imagebox">
+          <lottie-player
+            src="img/json/home.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+            class="caracteristica__4__imagebox--lottie4"
+          ></lottie-player>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="acerca">
+      <div class="footer_content">
+        <img
+          src="img/luume_footer-2x.png"
+          alt="Lu'um-e Logo"
+          loading="lazy"
+          class="footer_logo"
+        />
+        <div class="footer_content-text">
+          <div class="footer_content-informacion">
+            <span class="footer_text-head">Más información</span>
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a href="/contacto" class="footer__nav-link">Contacto</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="/privacidad" class="footer__nav-link"
+                  >Politicas de Privacidad</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer_content-siguenos">
+            <span class="footer_text-head">Siguenos</span>
+            <a href="https://www.instagram.com/luumeApp/" class="instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.facebook.com/luumeOfficial" class="facebook"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UCbFNaQXwCkpzNV14CvkGbhQ?sub_confirmation=1"
+              class="youtube"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <span>© Copyright 2022 lu’um-e</span>
+      </div>
+    </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <img
+          src="img/popup-1.jpg"
+          alt="Popup 1"
+          class="popup-img"
+          loading="lazy"
+        />
+        <img
+          src="img/popup-2.jpg"
+          alt="Popup 2"
+          class="popup-img2"
+          loading="lazy"
+        />
+
+        <div class="popup-description">
+          <a href="#" class="popup__close">&times;</a>
+
+          <h2 class="heading-2 heading-2--yellow heading-2--popup">
+            ¡Se parte de nuestro lanzamiento!
+          </h2>
+          <p class="popup-text">
+            Lu'um-e se encuentra en desarrollo y pronto estará disponible para
+            ustedes! Suscribete y enterate de las ultimas noticias y
+            actualizaciones de nuestro proyecto; Juntos crecemos hacia un futuro
+            sostenible.
+          </p>
+
+          <form class="form_popup" method="post" action="/subscription">
+            <div class="form_popup-group">
+              <input
+                type="email"
+                class="form_popup-input"
+                placeholder="Escribe tu correo aqui"
+                id="email"
+                name="email"
+                required
+                autocomplete="off"
+              />
+              <label for="email" class="form_popup-label"
+                >Corre Electronico</label
+              >
+            </div>
+
+            <button class="btn btn--form" type="submit" value="Send Message">
+              Ser miembro &rarr;
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lottie files  -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <!-- custom js file link -->
+    <script src="/js/script.js"></script>
+  </body>
+</html>

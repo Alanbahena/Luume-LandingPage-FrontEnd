@@ -1,0 +1,24 @@
+.privacy__header {
+  grid-column: center-start / center-end;
+  grid-row: 2 / 3;
+
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  grid-row-gap: 3rem;
+  justify-content: center;
+  align-content: center;
+
+  .success_lottie {
+    height: 380px;
+
+    @include respond(tab-port) {
+      height: 250px;
+    }
+  }
+
+  & p {
+    color: $color-primary-dark;
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+}

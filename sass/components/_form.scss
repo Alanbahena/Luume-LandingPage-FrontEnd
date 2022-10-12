@@ -1,0 +1,47 @@
+.form_popup {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1.5rem;
+
+  @include respond(phone) {
+    row-gap: 0.8rem;
+  }
+
+  &-input {
+    font-size: 1.8rem;
+    color: $color-primary;
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    background-color: rgba($header-form, $alpha: 0.1);
+    border: 2px solid rgba($header-form-border, $alpha: 1);
+    display: block;
+    transition: all 0.3s;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+      border: 2px solid rgba($main-button-3, $alpha: 1);
+    }
+
+    &:focus:invalid {
+      border: 2px solid rgba($header-form-wrong, $alpha: 1);
+    }
+  }
+
+  &-label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+    color: $color-black;
+  }
+
+  &-input:placeholder-shown + &-label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+}
